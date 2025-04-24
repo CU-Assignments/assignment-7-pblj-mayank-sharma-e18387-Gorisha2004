@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+</head>
+<body>
+    <h2>Employee Directory</h2>
+    
+    <form action="EmployeeServlet" method="get">
+        <label for="id">Search Employee by ID:</label>
+        <input type="text" id="id" name="id"><br><br>
+        <input type="submit" value="Search">
+    </form>
+    
+    <h3>All Employees</h3>
+    <ul>
+        <!-- Employee list will be dynamically filled -->
+        ${employees}
+    </ul>
+</body>
+</html>
